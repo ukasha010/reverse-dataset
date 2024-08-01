@@ -1,0 +1,2516 @@
+ENDBR64
+SUB RSP,0x8
+MOV RAX,qword ptr [0x00106fe8]
+TEST RAX,RAX
+JZ 0x00101016
+CALL RAX
+ADD RSP,0x8
+RET
+PUSH qword ptr [0x00106f20]
+JMP qword ptr [0x00106f28]
+ENDBR64
+PUSH 0x0
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x1
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x2
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x3
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x4
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x5
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x6
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x7
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x8
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x9
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0xa
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0xb
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0xc
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0xd
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0xe
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0xf
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x10
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x11
+JMP 0x00101020
+NOP
+ENDBR64
+PUSH 0x12
+JMP 0x00101020
+NOP
+ENDBR64
+JMP qword ptr [0x00106fc8]
+ENDBR64
+JMP qword ptr [0x00106f30]
+ENDBR64
+JMP qword ptr [0x00106f38]
+ENDBR64
+JMP qword ptr [0x00106f40]
+ENDBR64
+JMP qword ptr [0x00106f48]
+ENDBR64
+JMP qword ptr [0x00106f50]
+ENDBR64
+JMP qword ptr [0x00106f58]
+ENDBR64
+JMP qword ptr [0x00106f60]
+ENDBR64
+JMP qword ptr [0x00106f68]
+ENDBR64
+JMP qword ptr [0x00106f70]
+ENDBR64
+JMP qword ptr [0x00106f78]
+ENDBR64
+JMP qword ptr [0x00106f80]
+ENDBR64
+JMP qword ptr [0x00106f88]
+ENDBR64
+JMP qword ptr [0x00106f90]
+ENDBR64
+JMP qword ptr [0x00106f98]
+ENDBR64
+JMP qword ptr [0x00106fa0]
+ENDBR64
+JMP qword ptr [0x00106fa8]
+ENDBR64
+JMP qword ptr [0x00106fb0]
+ENDBR64
+JMP qword ptr [0x00106fb8]
+ENDBR64
+JMP qword ptr [0x00106fc0]
+ENDBR64
+XOR EBP,EBP
+MOV R9,RDX
+POP RSI
+MOV RDX,RSP
+AND RSP,-0x10
+PUSH RAX
+PUSH RSP
+XOR R8D,R8D
+XOR ECX,ECX
+LEA RDI,[0x101389]
+CALL qword ptr [0x00106fd8]
+HLT
+LEA RDI,[0x107018]
+LEA RAX,[0x107018]
+CMP RAX,RDI
+JZ 0x001012f8
+MOV RAX,qword ptr [0x00106fe0]
+TEST RAX,RAX
+JZ 0x001012f8
+JMP RAX
+RET
+LEA RDI,[0x107018]
+LEA RSI,[0x107018]
+SUB RSI,RDI
+MOV RAX,RSI
+SHR RSI,0x3f
+SAR RAX,0x3
+ADD RSI,RAX
+SAR RSI,0x1
+JZ 0x00101338
+MOV RAX,qword ptr [0x00106ff0]
+TEST RAX,RAX
+JZ 0x00101338
+JMP RAX
+RET
+ENDBR64
+CMP byte ptr [0x00107150],0x0
+JNZ 0x00101378
+PUSH RBP
+CMP qword ptr [0x00106fc8],0x0
+MOV RBP,RSP
+JZ 0x00101367
+MOV RDI,qword ptr [0x00107008]
+CALL 0x00101160
+CALL 0x001012d0
+MOV byte ptr [0x00107150],0x1
+POP RBP
+RET
+RET
+ENDBR64
+JMP 0x00101300
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0xc8
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x18],RAX
+XOR EAX,EAX
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x001017f8
+MOV dword ptr [RBP + -0xcc],0x0
+JMP 0x001013ec
+MOV EAX,dword ptr [RBP + -0xcc]
+ADD EAX,0x41
+MOV byte ptr [RBP + -0x70],AL
+LEA RDX,[RBP + -0x70]
+LEA RAX,[RBP + -0xc0]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001018fe
+ADD dword ptr [RBP + -0xcc],0x1
+CMP dword ptr [RBP + -0xcc],0x9
+JLE 0x001013c3
+LEA RAX,[0x104008]
+MOV RSI,RAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x001011e0
+JMP 0x0010145a
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x00101954
+MOVZX EAX,byte ptr [RAX]
+MOVSX EAX,AL
+MOV ESI,EAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x00101230
+MOV RDX,RAX
+LEA RAX,[0x104011]
+MOV RSI,RAX
+MOV RDI,RDX
+CALL 0x001011e0
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x00101972
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x00101936
+XOR EAX,0x1
+TEST AL,AL
+JNZ 0x00101410
+MOV RAX,qword ptr [0x00106fd0]
+MOV RSI,RAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x00101210
+LEA RAX,[0x104013]
+MOV RSI,RAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x001011e0
+MOV RBX,RAX
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x00101992
+MOV RSI,RAX
+MOV RDI,RBX
+CALL 0x00101180
+MOV RDX,qword ptr [0x00106fd0]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101210
+MOV dword ptr [RBP + -0xc8],0x0
+JMP 0x00101506
+MOV EAX,dword ptr [RBP + -0xc8]
+ADD EAX,0x41
+MOV byte ptr [RBP + -0x70],AL
+LEA RDX,[RBP + -0x70]
+LEA RAX,[RBP + -0xc0]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001018fe
+ADD dword ptr [RBP + -0xc8],0x1
+CMP dword ptr [RBP + -0xc8],0x9
+JLE 0x001014dd
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x001017f8
+MOV dword ptr [RBP + -0xc4],0x0
+JMP 0x00101553
+MOV EAX,dword ptr [RBP + -0xc4]
+ADD EAX,0x61
+MOV byte ptr [RBP + -0xcd],AL
+LEA RDX,[RBP + -0xcd]
+LEA RAX,[RBP + -0x70]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001018fe
+ADD dword ptr [RBP + -0xc4],0x1
+CMP dword ptr [RBP + -0xc4],0x9
+JLE 0x00101527
+LEA RDX,[RBP + -0x70]
+LEA RAX,[RBP + -0xc0]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001019b0
+LEA RAX,[0x104028]
+MOV RSI,RAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x001011e0
+JMP 0x001015d7
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x00101954
+MOVZX EAX,byte ptr [RAX]
+MOVSX EAX,AL
+MOV ESI,EAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x00101230
+MOV RDX,RAX
+LEA RAX,[0x104011]
+MOV RSI,RAX
+MOV RDI,RDX
+CALL 0x001011e0
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x00101972
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x00101936
+XOR EAX,0x1
+TEST AL,AL
+JNZ 0x0010158d
+MOV RAX,qword ptr [0x00106fd0]
+MOV RSI,RAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x00101210
+LEA RAX,[0x104033]
+MOV RSI,RAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x001011e0
+JMP 0x00101665
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x00101954
+MOVZX EAX,byte ptr [RAX]
+MOVSX EAX,AL
+MOV ESI,EAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x00101230
+MOV RDX,RAX
+LEA RAX,[0x104011]
+MOV RSI,RAX
+MOV RDI,RDX
+CALL 0x001011e0
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x00101972
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x00101936
+XOR EAX,0x1
+TEST AL,AL
+JNZ 0x00101621
+MOV RAX,qword ptr [0x00106fd0]
+MOV RSI,RAX
+LEA RAX,[0x107040]
+MOV RDI,RAX
+CALL 0x00101210
+MOV EBX,0x0
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x001017b8
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x001017b8
+MOV EAX,EBX
+MOV RDX,qword ptr [RBP + -0x18]
+SUB RDX,qword ptr FS:[0x28]
+JZ 0x001016ff
+JMP 0x001016fa
+ENDBR64
+MOV RBX,RAX
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x001017b8
+JMP 0x001016e0
+ENDBR64
+MOV RBX,RAX
+LEA RAX,[RBP + -0xc0]
+MOV RDI,RAX
+CALL 0x001017b8
+MOV RAX,RBX
+MOV RDI,RAX
+CALL 0x00101290
+CALL 0x00101220
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV dword ptr [RBP + -0x4],EDI
+MOV dword ptr [RBP + -0x8],ESI
+CMP dword ptr [RBP + -0x4],0x1
+JNZ 0x00101758
+CMP dword ptr [RBP + -0x8],0xffff
+JNZ 0x00101758
+LEA RAX,[0x107151]
+MOV RDI,RAX
+CALL 0x00101250
+LEA RAX,[0x107008]
+MOV RDX,RAX
+LEA RAX,[0x107151]
+MOV RSI,RAX
+MOV RAX,qword ptr [0x00106ff8]
+MOV RDI,RAX
+CALL 0x001011d0
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV ESI,0xffff
+MOV EDI,0x1
+CALL 0x00101705
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+CMP qword ptr [RBP + -0x8],0x1ff
+JA 0x001017b0
+MOV EAX,0x200
+MOV EDX,0x0
+DIV qword ptr [RBP + -0x8]
+JMP 0x001017b5
+MOV EAX,0x1
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x0010186a
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x001019fa
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX],0x0
+MOV qword ptr [RAX + 0x8],0x0
+MOV qword ptr [RAX + 0x10],0x0
+MOV qword ptr [RAX + 0x18],0x0
+MOV qword ptr [RAX + 0x20],0x0
+MOV qword ptr [RAX + 0x28],0x0
+MOV qword ptr [RAX + 0x30],0x0
+MOV qword ptr [RAX + 0x38],0x0
+MOV qword ptr [RAX + 0x40],0x0
+MOV qword ptr [RAX + 0x48],0x0
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x001017d8
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x68
+MOV qword ptr [RBP + -0x68],RDI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x18],RAX
+XOR EAX,EAX
+MOV RAX,qword ptr [RBP + -0x68]
+MOV RDI,RAX
+CALL 0x00101b1e
+MOV RBX,RAX
+LEA RAX,[RBP + -0x40]
+MOV RDX,qword ptr [RBP + -0x68]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101aec
+LEA RAX,[RBP + -0x60]
+MOV RDX,qword ptr [RBP + -0x68]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101aba
+LEA RDX,[RBP + -0x40]
+LEA RSI,[RBP + -0x60]
+MOV RAX,qword ptr [RBP + -0x68]
+MOV RCX,RBX
+MOV RDI,RAX
+CALL 0x00101b30
+MOV RAX,qword ptr [RBP + -0x68]
+MOV RDI,RAX
+CALL 0x00101a4e
+NOP
+MOV RAX,qword ptr [RBP + -0x18]
+SUB RAX,qword ptr FS:[0x28]
+JZ 0x001018f7
+CALL 0x00101220
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x18
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV RBX,qword ptr [RBP + -0x18]
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDI,RAX
+CALL 0x00101b72
+MOV RSI,RAX
+MOV RDI,RBX
+CALL 0x00101b84
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00101bba
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00101be8
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00101c3c
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00101cae
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RDX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101cdb
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00101170
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x18
+MOV qword ptr [RBP + -0x18],RDI
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x00101d06
+MOV RAX,qword ptr [RBP + -0x18]
+MOV ESI,0x0
+MOV RDI,RAX
+CALL 0x00101d32
+JMP 0x00101a48
+ENDBR64
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x001019da
+MOV RAX,RBX
+MOV RDI,RAX
+CALL 0x00101290
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX]
+TEST RAX,RAX
+JZ 0x00101aab
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX + 0x48]
+LEA RDX,[RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RCX,qword ptr [RAX + 0x28]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00101f06
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RCX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00101f52
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x001019da
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+LEA RDX,[RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101fc6
+MOV RAX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+LEA RDX,[RAX + 0x30]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101fc6
+MOV RAX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x50
+MOV qword ptr [RBP + -0x38],RDI
+MOV qword ptr [RBP + -0x40],RSI
+MOV qword ptr [RBP + -0x48],RDX
+MOV qword ptr [RBP + -0x50],RCX
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x8],RAX
+XOR EAX,EAX
+NOP
+MOV RAX,qword ptr [RBP + -0x8]
+SUB RAX,qword ptr FS:[0x28]
+JZ 0x00101b70
+CALL 0x00101220
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDI,RAX
+CALL 0x00101b72
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102018
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+LEA RDX,[RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+ADD RAX,0x30
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001020ad
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x40
+MOV qword ptr [RBP + -0x38],RDI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x8],RAX
+XOR EAX,EAX
+LEA RAX,[RBP + -0x30]
+MOV RDX,qword ptr [RBP + -0x38]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101aba
+LEA RAX,[RBP + -0x30]
+MOV RDI,RAX
+CALL 0x001020d4
+MOV RDX,qword ptr [RBP + -0x8]
+SUB RDX,qword ptr FS:[0x28]
+JZ 0x00101c3a
+CALL 0x00101220
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x18
+MOV qword ptr [RBP + -0x18],RDI
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RAX,qword ptr [RAX + 0x20]
+SUB RAX,0x1
+CMP RDX,RAX
+JZ 0x00101c9b
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RBX,qword ptr [RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x00101b1e
+MOV RSI,RBX
+MOV RDI,RAX
+CALL 0x001020e9
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RAX,qword ptr [RAX + 0x10]
+LEA RDX,[RAX + 0x1]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV qword ptr [RAX + 0x10],RDX
+JMP 0x00101ca7
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x00102114
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+LEA RDX,[RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+ADD RAX,0x30
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102191
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RDX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102216
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00101280
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x001022a4
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x48
+MOV qword ptr [RBP + -0x48],RDI
+MOV qword ptr [RBP + -0x50],RSI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x18],RAX
+XOR EAX,EAX
+MOV EDI,0x1
+CALL 0x0010178a
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x50]
+MOV EDX,0x0
+DIV RBX
+ADD RAX,0x1
+MOV qword ptr [RBP + -0x30],RAX
+MOV RAX,qword ptr [RBP + -0x30]
+ADD RAX,0x2
+MOV qword ptr [RBP + -0x38],RAX
+MOV qword ptr [RBP + -0x40],0x8
+LEA RDX,[RBP + -0x38]
+LEA RAX,[RBP + -0x40]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001022ee
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV qword ptr [RAX + 0x8],RDX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x0010231e
+MOV RDX,qword ptr [RBP + -0x48]
+MOV qword ptr [RDX],RAX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x8]
+SUB RAX,qword ptr [RBP + -0x30]
+SHR RAX,0x1
+SHL RAX,0x3
+ADD RAX,RDX
+MOV qword ptr [RBP + -0x28],RAX
+MOV RAX,qword ptr [RBP + -0x30]
+LEA RDX,[RAX*0x8]
+MOV RAX,qword ptr [RBP + -0x28]
+ADD RAX,RDX
+MOV qword ptr [RBP + -0x20],RAX
+MOV RDX,qword ptr [RBP + -0x20]
+MOV RCX,qword ptr [RBP + -0x28]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x001023b6
+MOV RAX,qword ptr [RBP + -0x48]
+LEA RDX,[RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RSI,RAX
+MOV RDI,RDX
+CALL 0x00102442
+MOV RAX,qword ptr [RBP + -0x48]
+ADD RAX,0x30
+MOV RDX,qword ptr [RBP + -0x20]
+SUB RDX,0x8
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102442
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RAX + 0x18]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV qword ptr [RAX + 0x10],RDX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RBX,qword ptr [RAX + 0x38]
+MOV EDI,0x1
+CALL 0x0010178a
+MOV RCX,RAX
+MOV RAX,qword ptr [RBP + -0x50]
+MOV EDX,0x0
+DIV RCX
+MOV RCX,RDX
+MOV RAX,RCX
+LEA RDX,[RBX + RAX*0x1]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV qword ptr [RAX + 0x30],RDX
+NOP
+MOV RAX,qword ptr [RBP + -0x18]
+SUB RAX,qword ptr FS:[0x28]
+JZ 0x00101eff
+JMP 0x00101efa
+ENDBR64
+MOV RDI,RAX
+CALL 0x001011a0
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RCX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00101f52
+MOV RAX,qword ptr [RBP + -0x48]
+MOV qword ptr [RAX],0x0
+MOV RAX,qword ptr [RBP + -0x48]
+MOV qword ptr [RAX + 0x8],0x0
+CALL 0x00101240
+ENDBR64
+MOV RBX,RAX
+CALL 0x00101270
+MOV RAX,RBX
+MOV RDI,RAX
+CALL 0x00101290
+CALL 0x00101220
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x30
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x20]
+MOV qword ptr [RBP + -0x8],RAX
+JMP 0x00101f43
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102492
+ADD qword ptr [RBP + -0x8],0x8
+MOV RAX,qword ptr [RBP + -0x8]
+CMP RAX,qword ptr [RBP + -0x28]
+JC 0x00101f28
+NOP
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x30
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x8],RAX
+XOR EAX,EAX
+LEA RAX,[RBP + -0x9]
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001024ca
+MOV RDX,qword ptr [RBP + -0x28]
+MOV RCX,qword ptr [RBP + -0x20]
+LEA RAX,[RBP + -0x9]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102521
+LEA RAX,[RBP + -0x9]
+MOV RDI,RAX
+CALL 0x00102502
+MOV RAX,qword ptr [RBP + -0x8]
+SUB RAX,qword ptr FS:[0x28]
+JZ 0x00101fc3
+CALL 0x00101220
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX],RDX
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x8],RDX
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x10],RDX
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX + 0x18]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x18],RDX
+NOP
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX + 0x30]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX + 0x40]
+SUB RAX,0x1
+CMP RDX,RAX
+JZ 0x00102081
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDI,RAX
+CALL 0x00102553
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RCX,qword ptr [RAX + 0x30]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102565
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX + 0x30]
+LEA RDX,[RAX + 0x1]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x30],RDX
+JMP 0x0010209f
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDI,RAX
+CALL 0x00102553
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001025a2
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00102674
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RAX]
+CMP RDX,RAX
+SETZ AL
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RDX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001026d4
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x18
+MOV qword ptr [RBP + -0x18],RDI
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RBX,qword ptr [RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x00101b1e
+MOV RSI,RBX
+MOV RDI,RAX
+CALL 0x001020e9
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RDX + 0x18]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102492
+MOV RAX,qword ptr [RBP + -0x18]
+ADD RAX,0x10
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RDX + 0x28]
+ADD RDX,0x8
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102442
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RAX + 0x18]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV qword ptr [RAX + 0x10],RDX
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+CALL 0x001026e7
+MOV RSI,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX + 0x18]
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RCX,qword ptr [RAX + 0x18]
+MOV RAX,RDX
+SUB RAX,RCX
+SAR RAX,0x3
+MOV RCX,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX + 0x18]
+TEST RAX,RAX
+SETNZ AL
+MOVZX EDX,AL
+MOV RAX,RCX
+SUB RAX,RDX
+IMUL RSI,RAX
+MOV RCX,RSI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX + 0x8]
+SUB RDX,RAX
+ADD RCX,RDX
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RAX]
+SUB RDX,RAX
+LEA RAX,[RCX + RDX*0x1]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x18
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV EAX,0x0
+TEST AL,AL
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RBP + -0x20]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001026fc
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDI,RAX
+CALL 0x00101b1e
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x00101b1e
+MOV RSI,RBX
+MOV RDI,RAX
+CALL 0x00102726
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102750
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX],0x0
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x8],0x0
+MOV RAX,qword ptr [RBP + -0x8]
+ADD RAX,0x10
+MOV RDI,RAX
+CALL 0x0010279c
+MOV RAX,qword ptr [RBP + -0x8]
+ADD RAX,0x30
+MOV RDI,RAX
+CALL 0x0010279c
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RAX]
+CMP RDX,RAX
+JNC 0x00102317
+MOV RAX,qword ptr [RBP + -0x10]
+JMP 0x0010231b
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x28
+MOV qword ptr [RBP + -0x28],RDI
+MOV qword ptr [RBP + -0x30],RSI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x18],RAX
+XOR EAX,EAX
+LEA RAX,[RBP + -0x19]
+MOV RDX,qword ptr [RBP + -0x28]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001024ca
+MOV RDX,qword ptr [RBP + -0x30]
+LEA RAX,[RBP + -0x19]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001027da
+MOV RBX,RAX
+NOP
+LEA RAX,[RBP + -0x19]
+MOV RDI,RAX
+CALL 0x00102502
+MOV RAX,RBX
+MOV RDX,qword ptr [RBP + -0x18]
+SUB RDX,qword ptr FS:[0x28]
+JZ 0x001023af
+JMP 0x001023aa
+ENDBR64
+MOV RBX,RAX
+LEA RAX,[RBP + -0x19]
+MOV RDI,RAX
+CALL 0x00102502
+MOV RAX,RBX
+MOV RDI,RAX
+CALL 0x00101290
+CALL 0x00101220
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x38
+MOV qword ptr [RBP + -0x28],RDI
+MOV qword ptr [RBP + -0x30],RSI
+MOV qword ptr [RBP + -0x38],RDX
+MOV RAX,qword ptr [RBP + -0x30]
+MOV qword ptr [RBP + -0x18],RAX
+JMP 0x001023f1
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RDI,RAX
+CALL 0x00102808
+MOV RDX,qword ptr [RBP + -0x18]
+MOV qword ptr [RDX],RAX
+ADD qword ptr [RBP + -0x18],0x8
+MOV RAX,qword ptr [RBP + -0x18]
+CMP RAX,qword ptr [RBP + -0x38]
+JC 0x001023d9
+JMP 0x0010243c
+ENDBR64
+MOV RDI,RAX
+CALL 0x001011a0
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RBP + -0x30]
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00101f06
+CALL 0x00101240
+ENDBR64
+MOV RBX,RAX
+CALL 0x00101270
+MOV RAX,RBX
+MOV RDI,RAX
+CALL 0x00101290
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x18
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RBP + -0x20]
+MOV qword ptr [RAX + 0x18],RDX
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV qword ptr [RAX + 0x8],RDX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RBX,qword ptr [RAX + 0x8]
+CALL 0x001026e7
+LEA RDX,[RBX + RAX*0x1]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV qword ptr [RAX + 0x10],RDX
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV EDI,0x1
+CALL 0x0010178a
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102272
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDI,RAX
+CALL 0x00102836
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102848
+MOV RAX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x0010286c
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x0010287c
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x00102553
+MOV RDX,RAX
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x001028b2
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x18
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x00101cae
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x001028f4
+CMP RBX,RAX
+SETZ AL
+TEST AL,AL
+JZ 0x001025eb
+LEA RAX,[0x104040]
+MOV RDI,RAX
+CALL 0x001011b0
+MOV RAX,qword ptr [RBP + -0x18]
+MOV ESI,0x1
+MOV RDI,RAX
+CALL 0x0010291a
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RDX + 0x48]
+LEA RBX,[RDX + 0x8]
+MOV RDI,RAX
+CALL 0x00102808
+MOV qword ptr [RBX],RAX
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDI,RAX
+CALL 0x00102553
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RAX + 0x30]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102565
+MOV RAX,qword ptr [RBP + -0x18]
+ADD RAX,0x30
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RDX + 0x48]
+ADD RDX,0x8
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102442
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDX,qword ptr [RAX + 0x38]
+MOV RAX,qword ptr [RBP + -0x18]
+MOV qword ptr [RAX + 0x30],RDX
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x40
+MOV qword ptr [RBP + -0x38],RDI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x8],RAX
+XOR EAX,EAX
+LEA RAX,[RBP + -0x30]
+MOV RDX,qword ptr [RBP + -0x38]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101aec
+LEA RAX,[RBP + -0x30]
+MOV RDI,RAX
+CALL 0x00102980
+LEA RAX,[RBP + -0x30]
+MOV RDI,RAX
+CALL 0x001020d4
+MOV RDX,qword ptr [RBP + -0x8]
+SUB RDX,qword ptr FS:[0x28]
+JZ 0x001026d2
+CALL 0x00101220
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+NOP
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV EDI,0x1
+CALL 0x0010178a
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RDX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x001029e6
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RDX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102aff
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101200
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00102b12
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX],0x0
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x8],0x0
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x10],0x0
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x18],0x0
+NOP
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV EDX,0x0
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102b48
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV EDI,0x1
+CALL 0x0010178a
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102bad
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00102bdc
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+NOP
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RAX,qword ptr [RBP + -0x18]
+LEA RDX,[RAX*0x8]
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101200
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x28
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RDI,RAX
+CALL 0x00102553
+MOVZX EBX,byte ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RSI,RAX
+MOV EDI,0x1
+CALL 0x00101774
+MOV byte ptr [RAX],BL
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00102836
+MOV RDI,RAX
+CALL 0x00102beb
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+LEA RSI,[RAX + 0x1]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RCX,qword ptr [RAX + 0x48]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,qword ptr [RAX]
+MOV RAX,RCX
+SUB RAX,RDI
+SAR RAX,0x3
+MOV RCX,RAX
+MOV RAX,RDX
+SUB RAX,RCX
+CMP RSI,RAX
+JBE 0x0010297d
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV EDX,0x0
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102c54
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX + 0x8]
+CMP RDX,RAX
+JNZ 0x001029ce
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX + 0x18]
+LEA RDX,[RAX + -0x8]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102442
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDX,qword ptr [RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX],RDX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX]
+LEA RDX,[RAX + -0x1]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX],RDX
+MOV RAX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x78
+MOV qword ptr [RBP + -0x78],RDI
+MOV qword ptr [RBP + -0x80],RSI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x18],RAX
+XOR EAX,EAX
+MOV RAX,qword ptr [RBP + -0x78]
+MOV RDI,RAX
+CALL 0x00102e77
+MOV RDX,RAX
+LEA RAX,[RBP + -0x70]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102ef6
+MOV RAX,qword ptr [RBP + -0x80]
+MOV RDI,RAX
+CALL 0x00102e77
+MOV RDX,qword ptr [RBP + -0x78]
+MOV RCX,qword ptr [RAX]
+MOV RBX,qword ptr [RAX + 0x8]
+MOV qword ptr [RDX],RCX
+MOV qword ptr [RDX + 0x8],RBX
+MOV RCX,qword ptr [RAX + 0x10]
+MOV RBX,qword ptr [RAX + 0x18]
+MOV qword ptr [RDX + 0x10],RCX
+MOV qword ptr [RDX + 0x18],RBX
+MOV RCX,qword ptr [RAX + 0x20]
+MOV RBX,qword ptr [RAX + 0x28]
+MOV qword ptr [RDX + 0x20],RCX
+MOV qword ptr [RDX + 0x28],RBX
+MOV RCX,qword ptr [RAX + 0x30]
+MOV RBX,qword ptr [RAX + 0x38]
+MOV qword ptr [RDX + 0x30],RCX
+MOV qword ptr [RDX + 0x38],RBX
+MOV RCX,qword ptr [RAX + 0x40]
+MOV RBX,qword ptr [RAX + 0x48]
+MOV qword ptr [RDX + 0x40],RCX
+MOV qword ptr [RDX + 0x48],RBX
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x00102e77
+MOV RDX,qword ptr [RBP + -0x80]
+MOV RCX,qword ptr [RAX]
+MOV RBX,qword ptr [RAX + 0x8]
+MOV qword ptr [RDX],RCX
+MOV qword ptr [RDX + 0x8],RBX
+MOV RCX,qword ptr [RAX + 0x10]
+MOV RBX,qword ptr [RAX + 0x18]
+MOV qword ptr [RDX + 0x10],RCX
+MOV qword ptr [RDX + 0x18],RBX
+MOV RCX,qword ptr [RAX + 0x20]
+MOV RBX,qword ptr [RAX + 0x28]
+MOV qword ptr [RDX + 0x20],RCX
+MOV qword ptr [RDX + 0x28],RBX
+MOV RCX,qword ptr [RAX + 0x30]
+MOV RBX,qword ptr [RAX + 0x38]
+MOV qword ptr [RDX + 0x30],RCX
+MOV qword ptr [RDX + 0x38],RBX
+MOV RCX,qword ptr [RAX + 0x40]
+MOV RBX,qword ptr [RAX + 0x48]
+MOV qword ptr [RDX + 0x40],RCX
+MOV qword ptr [RDX + 0x48],RBX
+NOP
+MOV RAX,qword ptr [RBP + -0x18]
+SUB RAX,qword ptr FS:[0x28]
+JZ 0x00102af9
+CALL 0x00101220
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+NOP
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00102fa8
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,0xfffffffffffffff
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00102b30
+CMP qword ptr [RBP + -0x10],RAX
+SETA AL
+MOVZX EAX,AL
+TEST RAX,RAX
+SETNZ AL
+TEST AL,AL
+JZ 0x00102b9a
+MOV RAX,0x1fffffffffffffff
+CMP qword ptr [RBP + -0x10],RAX
+JBE 0x00102b95
+CALL 0x001011c0
+CALL 0x00101190
+MOV RAX,qword ptr [RBP + -0x10]
+SHL RAX,0x3
+MOV RDI,RAX
+CALL 0x001011f0
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV EDX,0x0
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00102fc0
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+NOP
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x30
+MOV qword ptr [RBP + -0x28],RDI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x8],RAX
+XOR EAX,EAX
+MOV RAX,0x7fffffffffffffff
+MOV qword ptr [RBP + -0x18],RAX
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RDI,RAX
+CALL 0x0010277d
+MOV qword ptr [RBP + -0x10],RAX
+LEA RDX,[RBP + -0x10]
+LEA RAX,[RBP + -0x18]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x0010300c
+MOV RAX,qword ptr [RAX]
+MOV RDX,qword ptr [RBP + -0x8]
+SUB RDX,qword ptr FS:[0x28]
+JZ 0x00102c52
+CALL 0x00101220
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x58
+MOV qword ptr [RBP + -0x48],RDI
+MOV qword ptr [RBP + -0x50],RSI
+MOV EAX,EDX
+MOV byte ptr [RBP + -0x54],AL
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RAX + 0x48]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RCX,qword ptr [RAX + 0x28]
+MOV RAX,RDX
+SUB RAX,RCX
+SAR RAX,0x3
+ADD RAX,0x1
+MOV qword ptr [RBP + -0x30],RAX
+MOV RDX,qword ptr [RBP + -0x50]
+MOV RAX,qword ptr [RBP + -0x30]
+ADD RAX,RDX
+MOV qword ptr [RBP + -0x28],RAX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x8]
+MOV RDX,qword ptr [RBP + -0x28]
+ADD RDX,RDX
+CMP RAX,RDX
+JBE 0x00102d61
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x8]
+SUB RAX,qword ptr [RBP + -0x28]
+SHR RAX,0x1
+LEA RCX,[RAX*0x8]
+CMP byte ptr [RBP + -0x54],0x0
+JZ 0x00102ce5
+MOV RAX,qword ptr [RBP + -0x50]
+SHL RAX,0x3
+JMP 0x00102cea
+MOV EAX,0x0
+ADD RAX,RCX
+ADD RAX,RDX
+MOV qword ptr [RBP + -0x38],RAX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x28]
+CMP qword ptr [RBP + -0x38],RAX
+JNC 0x00102d2a
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x48]
+LEA RCX,[RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x28]
+MOV RDX,qword ptr [RBP + -0x38]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x0010303b
+JMP 0x00102e33
+MOV RAX,qword ptr [RBP + -0x30]
+LEA RDX,[RAX*0x8]
+MOV RAX,qword ptr [RBP + -0x38]
+ADD RDX,RAX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x48]
+LEA RCX,[RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x28]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x0010308a
+JMP 0x00102e33
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RBX,qword ptr [RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x48]
+LEA RDX,[RAX + 0x8]
+LEA RAX,[RBP + -0x50]
+MOV RSI,RAX
+MOV RDI,RDX
+CALL 0x001022ee
+MOV RAX,qword ptr [RAX]
+ADD RAX,RBX
+ADD RAX,0x2
+MOV qword ptr [RBP + -0x20],RAX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RBP + -0x20]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x0010231e
+MOV qword ptr [RBP + -0x18],RAX
+MOV RAX,qword ptr [RBP + -0x20]
+SUB RAX,qword ptr [RBP + -0x28]
+SHR RAX,0x1
+LEA RDX,[RAX*0x8]
+CMP byte ptr [RBP + -0x54],0x0
+JZ 0x00102dc8
+MOV RAX,qword ptr [RBP + -0x50]
+SHL RAX,0x3
+JMP 0x00102dcd
+MOV EAX,0x0
+ADD RDX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+ADD RAX,RDX
+MOV qword ptr [RBP + -0x38],RAX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x48]
+LEA RCX,[RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RAX,qword ptr [RAX + 0x28]
+MOV RDX,qword ptr [RBP + -0x38]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x0010303b
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RDX + 0x8]
+MOV RCX,qword ptr [RBP + -0x48]
+MOV RCX,qword ptr [RCX]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00101f52
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RBP + -0x18]
+MOV qword ptr [RAX],RDX
+MOV RAX,qword ptr [RBP + -0x48]
+MOV RDX,qword ptr [RBP + -0x20]
+MOV qword ptr [RAX + 0x8],RDX
+MOV RAX,qword ptr [RBP + -0x48]
+LEA RDX,[RAX + 0x10]
+MOV RAX,qword ptr [RBP + -0x38]
+MOV RSI,RAX
+MOV RDI,RDX
+CALL 0x00102442
+MOV RAX,qword ptr [RBP + -0x48]
+ADD RAX,0x30
+MOV RDX,qword ptr [RBP + -0x30]
+SHL RDX,0x3
+LEA RCX,[RDX + -0x8]
+MOV RDX,qword ptr [RBP + -0x38]
+ADD RDX,RCX
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102442
+NOP
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x10
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX],RDX
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX + 0x8]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV qword ptr [RAX + 0x8],RDX
+MOV RAX,qword ptr [RBP + -0x8]
+ADD RAX,0x10
+MOV RDX,qword ptr [RBP + -0x10]
+ADD RDX,0x10
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101fc6
+MOV RAX,qword ptr [RBP + -0x8]
+ADD RAX,0x30
+MOV RDX,qword ptr [RBP + -0x10]
+ADD RDX,0x30
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00101fc6
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x78
+MOV qword ptr [RBP + -0x78],RDI
+MOV qword ptr [RBP + -0x80],RSI
+MOV RAX,qword ptr FS:[0x28]
+MOV qword ptr [RBP + -0x18],RAX
+XOR EAX,EAX
+MOV RDX,qword ptr [RBP + -0x80]
+MOV RAX,qword ptr [RBP + -0x78]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x00102e8a
+LEA RAX,[RBP + -0x70]
+MOV RDI,RAX
+CALL 0x001022a4
+MOV RAX,qword ptr [RBP + -0x80]
+MOV RCX,qword ptr [RBP + -0x70]
+MOV RBX,qword ptr [RBP + -0x68]
+MOV qword ptr [RAX],RCX
+MOV qword ptr [RAX + 0x8],RBX
+MOV RCX,qword ptr [RBP + -0x60]
+MOV RBX,qword ptr [RBP + -0x58]
+MOV qword ptr [RAX + 0x10],RCX
+MOV qword ptr [RAX + 0x18],RBX
+MOV RCX,qword ptr [RBP + -0x50]
+MOV RBX,qword ptr [RBP + -0x48]
+MOV qword ptr [RAX + 0x20],RCX
+MOV qword ptr [RAX + 0x28],RBX
+MOV RCX,qword ptr [RBP + -0x40]
+MOV RBX,qword ptr [RBP + -0x38]
+MOV qword ptr [RAX + 0x30],RCX
+MOV qword ptr [RAX + 0x38],RBX
+MOV RCX,qword ptr [RBP + -0x30]
+MOV RBX,qword ptr [RBP + -0x28]
+MOV qword ptr [RAX + 0x40],RCX
+MOV qword ptr [RAX + 0x48],RBX
+NOP
+MOV RAX,qword ptr [RBP + -0x18]
+SUB RAX,qword ptr FS:[0x28]
+JZ 0x00102fa1
+CALL 0x00101220
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,0x7fffffffffffffff
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RDI,RAX
+CALL 0x00102fa8
+CMP qword ptr [RBP + -0x10],RAX
+SETA AL
+MOVZX EAX,AL
+TEST RAX,RAX
+SETNZ AL
+TEST AL,AL
+JZ 0x00102ffd
+CALL 0x00101190
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDI,RAX
+CALL 0x001011f0
+NOP
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+MOV RDX,qword ptr [RAX]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RAX,qword ptr [RAX]
+CMP RDX,RAX
+JNC 0x00103035
+MOV RAX,qword ptr [RBP + -0x10]
+JMP 0x00103039
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x28
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDI,RAX
+CALL 0x001030d9
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x001030d9
+MOV RCX,RAX
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RDX,RAX
+MOV RSI,RBX
+MOV RDI,RCX
+CALL 0x001030eb
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH RBX
+SUB RSP,0x28
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDI,RAX
+CALL 0x001030d9
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x001030d9
+MOV RCX,RAX
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RDX,RAX
+MOV RSI,RBX
+MOV RDI,RCX
+CALL 0x00103159
+MOV RBX,qword ptr [RBP + -0x8]
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH R12
+PUSH RBX
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RDI,RAX
+CALL 0x001031c7
+MOV R12,RAX
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDI,RAX
+CALL 0x001031c7
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x001031c7
+MOV RDX,R12
+MOV RSI,RBX
+MOV RDI,RAX
+CALL 0x001031d9
+MOV RDX,RAX
+LEA RAX,[RBP + -0x28]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x0010320a
+ADD RSP,0x20
+POP RBX
+POP R12
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+PUSH R12
+PUSH RBX
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RDI,RAX
+CALL 0x001031c7
+MOV R12,RAX
+MOV RAX,qword ptr [RBP + -0x20]
+MOV RDI,RAX
+CALL 0x001031c7
+MOV RBX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RDI,RAX
+CALL 0x001031c7
+MOV RDX,R12
+MOV RSI,RBX
+MOV RDI,RAX
+CALL 0x00103220
+MOV RDX,RAX
+LEA RAX,[RBP + -0x28]
+MOV RSI,RDX
+MOV RDI,RAX
+CALL 0x0010320a
+ADD RSP,0x20
+POP RBX
+POP R12
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV RAX,qword ptr [RBP + -0x8]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00103251
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV RAX,qword ptr [RBP + -0x10]
+POP RBP
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00103282
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x001032b3
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x20
+MOV qword ptr [RBP + -0x8],RDI
+MOV qword ptr [RBP + -0x10],RSI
+MOV qword ptr [RBP + -0x18],RDX
+MOV RDX,qword ptr [RBP + -0x18]
+MOV RCX,qword ptr [RBP + -0x10]
+MOV RAX,qword ptr [RBP + -0x8]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00103316
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x30
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x20]
+SUB RAX,qword ptr [RBP + -0x18]
+SAR RAX,0x3
+MOV qword ptr [RBP + -0x8],RAX
+CMP qword ptr [RBP + -0x8],0x0
+JZ 0x00103301
+MOV RAX,qword ptr [RBP + -0x8]
+LEA RDX,[RAX*0x8]
+MOV RCX,qword ptr [RBP + -0x18]
+MOV RAX,qword ptr [RBP + -0x28]
+MOV RSI,RCX
+MOV RDI,RAX
+CALL 0x00101260
+MOV RAX,qword ptr [RBP + -0x8]
+LEA RDX,[RAX*0x8]
+MOV RAX,qword ptr [RBP + -0x28]
+ADD RAX,RDX
+LEAVE
+RET
+ENDBR64
+PUSH RBP
+MOV RBP,RSP
+SUB RSP,0x30
+MOV qword ptr [RBP + -0x18],RDI
+MOV qword ptr [RBP + -0x20],RSI
+MOV qword ptr [RBP + -0x28],RDX
+MOV RAX,qword ptr [RBP + -0x20]
+SUB RAX,qword ptr [RBP + -0x18]
+SAR RAX,0x3
+MOV qword ptr [RBP + -0x8],RAX
+CMP qword ptr [RBP + -0x8],0x0
+JZ 0x00103375
+MOV RAX,qword ptr [RBP + -0x8]
+LEA RDX,[RAX*0x8]
+MOV RAX,qword ptr [RBP + -0x8]
+SHL RAX,0x3
+NEG RAX
+MOV RCX,RAX
+MOV RAX,qword ptr [RBP + -0x28]
+ADD RCX,RAX
+MOV RAX,qword ptr [RBP + -0x18]
+MOV RSI,RAX
+MOV RDI,RCX
+CALL 0x00101260
+MOV RAX,qword ptr [RBP + -0x8]
+SHL RAX,0x3
+NEG RAX
+MOV RDX,RAX
+MOV RAX,qword ptr [RBP + -0x28]
+ADD RAX,RDX
+LEAVE
+RET
+ENDBR64
+SUB RSP,0x8
+ADD RSP,0x8
+RET
