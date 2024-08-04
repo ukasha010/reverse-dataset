@@ -1,0 +1,24 @@
+#include<iostream>
+#include<cstring>    //for strcat() functionm
+using namespace std;
+int main()
+{
+    char a[100] = "My username is ";
+    char b[] = "prakharjadaun";
+
+    strcat(a,b);
+
+    cout<<"After concatenation : \n"<<a<<endl;
+
+    char c[100]="Are you ";
+    char d[] = "mad!??";
+
+    int len= strlen(c);
+    for(int j=0;d[j]!='\0';j++,++len)
+    {
+        c[len]=d[j];
+    } 
+    c[len]='\0';
+    cout<<"Without strcat() : "<<c<<endl;
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+int main()
+{
+    std::vector<int> v = {23,12,654,34,12,7};
+    std::vector<int>::iterator p = v.begin();
+    std::cout<<"Vector v : ";
+    while(p!=v.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+
+    std::cout<<distance(v.begin(),min_element(v.begin(),v.end()))<<std::endl;
+    return 0;
+}

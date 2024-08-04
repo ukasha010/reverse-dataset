@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+template<class T1> 
+T1 addVal(T1 a,T1 b)
+{
+    cout<<"\nInside template addVal"<<endl;
+    return a+b;
+}
+
+int addVal(int a,int b)
+{
+    cout<<"\nInside addVal int specialization"<<endl;
+    return a+b;
+}
+
+
+int main()
+{
+    int i=500,j=920;
+    double x=11,y=23.34;
+    short a=2,b=4;
+
+    cout<<"Adding the integers : "<<addVal(i,j)<<endl;     //calls explicitly overloaded addVal
+    cout<<"Adding the double : "<<addVal(x,y)<<endl;       //calls generic addVal
+    cout<<"Adding the short : "<<addVal(a,b)<<endl;        //calls generic addVal
+
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include<iostream>
+#include<fstream>       
+using namespace std;
+int main()
+{
+    char ch;
+    ifstream in("Data.txt");       //open file for output(writing)
+
+    if(!in)
+    {
+        cout<<"Cannot open file!!"<<endl;
+        return 1;
+    }
+    char str[20];
+    in.seekg(0,ios::beg);
+
+    while(in.get(ch))
+    {
+        cout<<ch;
+    }
+    
+    in.close();
+    return 0;
+}

@@ -1,0 +1,27 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+int main()
+{
+    std::vector<int> v = {1,2,3,4,5,6,7};
+    std::cout<<"Vector v : ";
+    for(int i=0;i<v.size();i++)
+    {
+        std::cout<<v[i]<<" ";
+    }
+    std::cout<<std::endl;
+
+    std::iter_swap(v.begin(),v.end()-1);
+    std::cout<<"After swapping, Vector v : ";
+    for(int i=0;i<v.size();i++)
+    {
+        std::cout<<v[i]<<" ";
+    }
+    std::cout<<std::endl;
+
+    std::vector<char> c = {'a','v','d'};
+    std::vector<char> c2 = {'u','i','w'};
+
+    std::cout<<std::lexicographical_compare(c.begin(),c.end(),c2.begin(),c2.end());
+    return 0;
+}

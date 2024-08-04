@@ -1,0 +1,28 @@
+#include<iostream>
+#include<stack>
+int main()
+{
+    std::stack<int> st;
+    int n;
+    std::cout<<"Enter the n : ";
+    std::cin>>n;
+    std::cout<<"Enter the elements into the stack : "<<std::endl;
+    
+    while(n!=0)
+    {
+        int temp;
+        std::cin>>temp;
+        st.push(temp);
+        n--;
+    }  
+
+    std::cout<<st.size()<<std::endl;
+    
+    while(!st.empty())
+    {
+        std::cout<<st.top()<<std::endl;
+        st.pop();
+    }
+
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+class Base 
+{
+
+};
+
+class Derived : public Base
+{
+
+};
+
+int main()
+{
+    Derived d;
+
+    try
+    {
+        throw d;
+    }
+    catch(Base B)       //catching an exception of base class
+    {
+        cout<<"Exception of base class handled"<<endl;
+    }
+    catch(Derived D)    //catching an exception of derived class
+    {
+        cout<<"Exception of derived class handled"<<endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,42 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+bool isOdd(int i)
+{
+    if(i%2!=0)
+    return true;
+    else
+    return false;
+}
+int main()
+{
+    std::vector<int> v = {11,432,54,11,34,879,21,11,80};
+    std::vector<int>::iterator p = v.begin();
+    std::cout<<"Vector v : ";
+    while(p!=v.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+
+    std::cout<<"Count : "<<count(v.begin(),v.end(),11)<<std::endl;
+
+
+    std::cout<<"Count even : "<<std::count_if(v.begin(),v.end(), isOdd);
+
+
+
+    if(find(v.begin(),v.end(),54)!=v.end())
+    {
+        std::cout<<"\nElement Found!!"<<std::endl;
+    }
+    else
+    {
+        std::cout<<"Element not found!!"<<std::endl;
+    }
+
+    std::vector<int> v2 = {1,2};
+    std::cout<<std::find_end(v.begin(),v.end(),v2.begin(),v2.end()) - v.begin();
+    return 0;
+}

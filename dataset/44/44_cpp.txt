@@ -1,0 +1,53 @@
+#include <iostream>
+#include <set>
+int main()
+{
+    std::set<int> s1;
+
+    s1.insert(40);
+    s1.insert(44);
+    s1.insert(0);
+    s1.insert(88);
+    s1.insert(3);
+
+    std::set<int>::iterator p;
+    for (p = s1.begin(); p != s1.end(); p++)
+    {
+        std::cout << *p << " ";
+    }
+    std::cout<<std::endl;
+    s1.insert(44);
+    s1.insert(88);
+    for (p = s1.begin(); p != s1.end(); p++)
+    {
+        std::cout << *p << " ";
+    }
+    std::cout<<std::endl;
+
+    std::cout<<"Size : "<<s1.size();
+
+
+    std::set<int> s2(s1.begin(),s1.end());
+    std::set<int>::iterator p2;
+    std::cout<<"Set 2 : ";
+    for (p2 = s2.begin(); p2 != s2.end(); p2++)
+    {
+        std::cout << *p2 << " ";
+    }
+    std::cout<<std::endl;
+
+    s2.erase(40);
+    std::cout<<"After Deletion....!"<<std::endl;
+
+    std::cout<<"Set 2 : ";
+    for (p2 = s2.begin(); p2 != s2.end(); p2++)
+    {
+        std::cout << *p2 << " ";
+    }
+    std::cout<<std::endl;
+
+    s2.clear();
+
+    std::cout<<"Size of set 2 : "<<s2.size()<<std::endl;
+    return 0;
+}

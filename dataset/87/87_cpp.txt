@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    try 
+    {
+        cout<<"Inside the try block"<<endl;
+        int a,b;
+        cout<<"Enter a : ";
+        cin>>a;
+        cout<<"Enter b : ";
+        cin>>b;
+        cout<<"Result : "<<a+b<<endl;
+    }
+    catch(int i)
+    {
+        cout<<"Inside the catch block"<<endl;
+    }
+
+    cout<<"End of the program"<<endl;
+    return 0;
+}

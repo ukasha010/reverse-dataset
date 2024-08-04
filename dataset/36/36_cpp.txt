@@ -1,0 +1,50 @@
+#include<iostream>
+#include<list>
+int main()
+{
+    std::list<int> lt;
+
+    for(int i=0;i<10;i++)
+    {
+        lt.push_back(i);
+    }
+
+    std::list<int>::iterator p = lt.begin();
+    std::cout<<"List : ";
+    while(p!=lt.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+
+    p = lt.begin();
+    while(p!=lt.end())
+    {
+        *p = *p + 100;
+        p++;
+    }
+
+    std::cout<<"Modified List : ";
+    p = lt.begin();
+    while(p!=lt.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+
+
+    lt.pop_back();
+    lt.pop_front();
+
+    std::cout<<"Modified List : ";
+    p = lt.begin();
+    while(p!=lt.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+    return 0;
+}

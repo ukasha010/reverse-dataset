@@ -1,0 +1,39 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+int main()
+{
+    std::vector<int> v = {23,45,12,56,78,90};
+    std::vector<int> v2(4);
+
+
+    std::cout<<"Vector : ";
+    std::vector<int>::iterator p = v.begin();
+    while(p!=v.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+
+    std::copy(v.begin(),v.begin()+3,v2.begin());
+    std::cout<<"Copied three elements of vector\n";
+
+    std::cout<<"Vector 2 : ";
+    for(int i=0;i<v2.size();i++)
+    {
+        std::cout<<v2[i]<<" ";
+    }
+    std::cout<<std::endl;
+   
+    std::vector<int> v3(5);
+    std::copy_n(v.begin(),5,v3.begin());
+    std::cout<<"Vector 2 (using copy_n) : ";
+    for(int i=0;i<v3.size();i++)
+    {
+        std::cout<<v3[i]<<" ";
+    }
+    std::cout<<std::endl;
+
+    return 0;
+}

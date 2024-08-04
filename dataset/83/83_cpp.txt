@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout<<"Beginning of the code"<<endl;
+
+    try
+    {
+        cout<<"Inside the try block"<<endl;
+        throw 'a';
+        cout<<"Line after the throw statement"<<endl;
+    }
+    catch(char e)
+    {
+        cout<<"Inside the catch block"<<endl;
+        cout<<"Exception caught with character : "<<e<<endl;
+    }
+
+    cout<<"Outside of the try-catch block"<<endl;
+    return 0;
+}

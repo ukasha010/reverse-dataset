@@ -1,0 +1,43 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+int main()
+{
+    std::vector<int> v = {3,7,63,45,12,89,123,45};
+
+    std::make_heap(v.begin(),v.end());
+
+    std::cout<<"Max element of the heap : "<<v.front()<<std::endl;
+
+    v.push_back(900);
+    v.push_back(33);
+
+    std::make_heap(v.begin(),v.end());
+
+    std::cout<<"Max element of the heap : "<<v.front()<<std::endl;
+
+    std::pop_heap(v.begin(),v.end());
+    v.pop_back();
+
+    std::cout<<"Max element of the heap : "<<v.front()<<std::endl;
+    
+    std::cout<<"Heap elements : ";
+    for(int &i : v)
+    {
+        std::cout<<i<<" ";
+    }
+    std::cout<<"\n";
+
+    std::sort_heap(v.begin(),v.end());
+
+    std::cout<<"After sorting, Heap elements : ";
+    for(int &i : v)
+    {
+        std::cout<<i<<" ";
+    }
+    std::cout<<"\n";
+
+    std::is_heap(v.begin(),v.end())?std::cout<<"Container is heap!"<<std::endl:std::cout<<"Container is not heap!!"<<std::endl;
+
+    return 0;
+}

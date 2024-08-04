@@ -1,0 +1,14 @@
+#include<iostream>
+#include<stdlib.h>     //for rand()
+#include<time.h>
+int main()
+{
+    int n;
+    std::cout<<"Enter n : ";
+    std::cin>>n;
+
+    for(int i=0;i<n;i++)
+    {
+        std::cout<<rand()<<std::endl;
+    }
+}

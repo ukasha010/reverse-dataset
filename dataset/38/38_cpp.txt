@@ -1,0 +1,34 @@
+#include<iostream>
+#include<list>
+#include<cstdlib>           //for rand() function to generate random integers
+int main()
+{
+
+    std::list<int> l;
+
+    for(int i=0;i<10;i++)
+    {
+        l.push_back(rand());
+    }
+
+    std::cout<<"Contents of the list : ";
+    std::list<int>::iterator p = l.begin();
+    while(p!=l.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+    l.sort();
+
+    std::cout<<"Sorted Contents : ";
+    p = l.begin();
+    while(p!=l.end())
+    {
+        std::cout<<*p<<" ";
+        p++;
+    }
+    std::cout<<std::endl;
+
+    return 0;
+}

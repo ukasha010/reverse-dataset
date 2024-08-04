@@ -1,0 +1,1132 @@
+
+int _init(EVP_PKEY_CTX *ctx)
+
+{
+  undefined *puVar1;
+  
+  puVar1 = PTR___gmon_start___00104fe8;
+  if (PTR___gmon_start___00104fe8 != (undefined *)0x0) {
+    puVar1 = (undefined *)(*(code *)PTR___gmon_start___00104fe8)();
+  }
+  return (int)puVar1;
+}
+
+
+
+void FUN_00102020(void)
+
+{
+  (*(code *)PTR_00104ee8)();
+  return;
+}
+
+
+
+void __cxa_finalize(void)
+
+{
+  (*(code *)PTR___cxa_finalize_00104fc8)();
+  return;
+}
+
+
+
+void __thiscall std::allocator<char>::~allocator(allocator<char> *this)
+
+{
+  (*(code *)PTR__allocator_00104ef0)();
+  return;
+}
+
+
+
+void __thiscall
+std::basic_ostream<char,std::char_traits<char>>::operator<<
+          (basic_ostream<char,std::char_traits<char>> *this,ulong param_1)
+
+{
+  (*(code *)PTR_operator<<_00104ef8)();
+  return;
+}
+
+
+
+void __cxa_begin_catch(void)
+
+{
+  (*(code *)PTR___cxa_begin_catch_00104f00)();
+  return;
+}
+
+
+
+
+
+size_t strlen(char *__s)
+
+{
+  size_t sVar1;
+  
+  sVar1 = (*(code *)PTR_strlen_00104f08)();
+  return sVar1;
+}
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+          (basic_string<char,std::char_traits<char>,std::allocator<char>> *this)
+
+{
+  (*(code *)PTR__basic_string_00104f10)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_set_length
+               (ulong param_1)
+
+{
+  (*(code *)PTR__M_set_length_00104f18)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size(void)
+
+{
+  (*(code *)PTR_size_00104f20)();
+  return;
+}
+
+
+
+
+
+void std::__throw_logic_error(char *param_1)
+
+{
+  (*(code *)PTR___throw_logic_error_00104f28)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_local_data
+               (void)
+
+{
+  (*(code *)PTR__M_local_data_00104f30)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_data
+               (char *param_1)
+
+{
+  (*(code *)PTR__M_data_00104f38)();
+  return;
+}
+
+
+
+void __cxa_atexit(void)
+
+{
+  (*(code *)PTR___cxa_atexit_00104f40)();
+  return;
+}
+
+
+
+
+
+basic_ostream * std::operator<<(basic_ostream *param_1,char *param_2)
+
+{
+  basic_ostream *pbVar1;
+  
+  pbVar1 = (basic_ostream *)(*(code *)PTR_operator<<_00104f48)();
+  return pbVar1;
+}
+
+
+
+void __thiscall
+std::basic_ostream<char,std::char_traits<char>>::operator<<
+          (basic_ostream<char,std::char_traits<char>> *this,
+          _func_basic_ostream_ptr_basic_ostream_ptr *param_1)
+
+{
+  (*(code *)PTR_operator<<_00104f50)();
+  return;
+}
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider::
+_Alloc_hider(_Alloc_hider *this,char *param_1,allocator *param_2)
+
+{
+  (*(code *)PTR__Alloc_hider_00104f58)();
+  return;
+}
+
+
+
+void __thiscall std::allocator<char>::~allocator(allocator<char> *this)
+
+{
+  (*(code *)PTR__allocator_00104f60)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_data(void)
+
+{
+  (*(code *)PTR__M_data_00104f68)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_S_copy_chars
+               (char *param_1,char *param_2,char *param_3)
+
+{
+  (*(code *)PTR__S_copy_chars_00104f70)();
+  return;
+}
+
+
+
+void __stack_chk_fail(void)
+
+{
+  (*(code *)PTR___stack_chk_fail_00104f78)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_dispose(void)
+
+{
+  (*(code *)PTR__M_dispose_00104f80)();
+  return;
+}
+
+
+
+void __cxa_rethrow(void)
+
+{
+  (*(code *)PTR___cxa_rethrow_00104f88)();
+  return;
+}
+
+
+
+void __thiscall std::ios_base::Init::Init(Init *this)
+
+{
+  (*(code *)PTR_Init_00104f90)();
+  return;
+}
+
+
+
+void __cxa_end_catch(void)
+
+{
+  (*(code *)PTR___cxa_end_catch_00104f98)();
+  return;
+}
+
+
+
+void __thiscall
+std::basic_ostream<char,std::char_traits<char>>::operator<<
+          (basic_ostream<char,std::char_traits<char>> *this,int param_1)
+
+{
+  (*(code *)PTR_operator<<_00104fa0)();
+  return;
+}
+
+
+
+void _Unwind_Resume(void)
+
+{
+  (*(code *)PTR__Unwind_Resume_00104fa8)();
+  return;
+}
+
+
+
+
+
+void std::allocator<char>::allocator(void)
+
+{
+  (*(code *)PTR_allocator_00104fb0)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_create
+               (ulong *param_1,ulong param_2)
+
+{
+  (*(code *)PTR__M_create_00104fb8)();
+  return;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_capacity
+               (ulong param_1)
+
+{
+  (*(code *)PTR__M_capacity_00104fc0)();
+  return;
+}
+
+
+
+void processEntry _start(undefined8 param_1,undefined8 param_2)
+
+{
+  undefined auStack_8 [8];
+  
+  (*(code *)PTR___libc_start_main_00104fd8)(main,param_2,&stack0x00000008,0,0,param_1,auStack_8);
+  do {
+                    
+  } while( true );
+}
+
+
+
+
+
+
+void deregister_tm_clones(void)
+
+{
+  return;
+}
+
+
+
+
+
+
+void register_tm_clones(void)
+
+{
+  return;
+}
+
+
+
+void __do_global_dtors_aux(void)
+
+{
+  if (completed_0 == '\0') {
+    if (PTR___cxa_finalize_00104fc8 != (undefined *)0x0) {
+      __cxa_finalize(__dso_handle);
+    }
+    deregister_tm_clones();
+    completed_0 = 1;
+    return;
+  }
+  return;
+}
+
+
+
+void frame_dummy(void)
+
+{
+  register_tm_clones();
+  return;
+}
+
+
+
+undefined8 main(void)
+
+{
+  basic_ostream *pbVar1;
+  ulong uVar2;
+  basic_ostream<char,std::char_traits<char>> *pbVar3;
+  size_t sVar4;
+  long in_FS_OFFSET;
+  allocator local_61;
+  int local_60;
+  int local_5c;
+  basic_string<char,std::char_traits<char>,std::allocator<char>> local_58 [43];
+  undefined8 local_2d;
+  undefined4 local_25;
+  undefined local_21;
+  long local_20;
+  
+  local_20 = *(long *)(in_FS_OFFSET + 0x28);
+  std::allocator<char>::allocator();
+                    
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::
+  basic_string<std::allocator<char>>(local_58,"I love music",&local_61);
+  std::allocator<char>::~allocator((allocator<char> *)&local_61);
+                    
+  pbVar1 = std::operator<<((basic_ostream *)std::cout,"Length of the string is : ");
+  uVar2 = std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size();
+  pbVar3 = (basic_ostream<char,std::char_traits<char>> *)
+           std::basic_ostream<char,std::char_traits<char>>::operator<<
+                     ((basic_ostream<char,std::char_traits<char>> *)pbVar1,uVar2);
+  std::basic_ostream<char,std::char_traits<char>>::operator<<
+            (pbVar3,(_func_basic_ostream_ptr_basic_ostream_ptr *)
+                    PTR_endl<char,std_char_traits<char>>_00104fd0);
+  local_2d = 0x702079616c702049;
+  local_25 = 0x6f6e6169;
+  local_21 = 0;
+  pbVar1 = std::operator<<((basic_ostream *)std::cout,"Length of the string is : ");
+  sVar4 = strlen((char *)&local_2d);
+  pbVar3 = (basic_ostream<char,std::char_traits<char>> *)
+           std::basic_ostream<char,std::char_traits<char>>::operator<<
+                     ((basic_ostream<char,std::char_traits<char>> *)pbVar1,sVar4);
+  std::basic_ostream<char,std::char_traits<char>>::operator<<
+            (pbVar3,(_func_basic_ostream_ptr_basic_ostream_ptr *)
+                    PTR_endl<char,std_char_traits<char>>_00104fd0);
+  local_60 = 0;
+  for (local_5c = 0; *(char *)((long)&local_2d + (long)local_5c) != '\0'; local_5c = local_5c + 1) {
+    local_60 = local_60 + 1;
+  }
+  pbVar1 = std::operator<<((basic_ostream *)std::cout,"Length of the string is : ");
+  pbVar3 = (basic_ostream<char,std::char_traits<char>> *)
+           std::basic_ostream<char,std::char_traits<char>>::operator<<
+                     ((basic_ostream<char,std::char_traits<char>> *)pbVar1,local_60);
+  std::basic_ostream<char,std::char_traits<char>>::operator<<
+            (pbVar3,(_func_basic_ostream_ptr_basic_ostream_ptr *)
+                    PTR_endl<char,std_char_traits<char>>_00104fd0);
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+            (local_58);
+  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    
+    __stack_chk_fail();
+  }
+  return 0;
+}
+
+
+
+
+
+void __static_initialization_and_destruction_0(int param_1,int param_2)
+
+{
+  if ((param_1 == 1) && (param_2 == 0xffff)) {
+    std::ios_base::Init::Init((Init *)&std::__ioinit);
+    __cxa_atexit(PTR__Init_00104ff8,&std::__ioinit,&__dso_handle);
+  }
+  return;
+}
+
+
+
+void _GLOBAL__sub_I_main(void)
+
+{
+  __static_initialization_and_destruction_0(1,0xffff);
+  return;
+}
+
+
+
+
+
+
+void std::char_traits<char>::length(char *param_1)
+
+{
+  strlen(param_1);
+  return;
+}
+
+
+
+
+
+bool __gnu_cxx::char_traits<char>::eq(char *param_1,char *param_2)
+
+{
+  return *param_1 == *param_2;
+}
+
+
+
+
+
+long __gnu_cxx::char_traits<char>::length(char *param_1)
+
+{
+  char cVar1;
+  long in_FS_OFFSET;
+  char local_19;
+  long local_18;
+  long local_10;
+  
+  local_10 = *(long *)(in_FS_OFFSET + 0x28);
+  local_18 = 0;
+  while( true ) {
+    local_19 = '\0';
+    cVar1 = eq(param_1 + local_18,&local_19);
+    if (cVar1 == '\x01') break;
+    local_18 = local_18 + 1;
+  }
+  if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    
+    __stack_chk_fail();
+  }
+  return local_18;
+}
+
+
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider::
+~_Alloc_hider(_Alloc_hider *this)
+
+{
+  std::allocator<char>::~allocator((allocator<char> *)this);
+  return;
+}
+
+
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::
+basic_string<std::allocator<char>>
+          (basic_string<char,std::char_traits<char>,std::allocator<char>> *this,char *param_1,
+          allocator *param_2)
+
+{
+  long lVar1;
+  int iVar2;
+  forward_iterator_tag fVar3;
+  char *pcVar4;
+  long in_FS_OFFSET;
+  
+  lVar1 = *(long *)(in_FS_OFFSET + 0x28);
+  pcVar4 = (char *)std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::
+                   _M_local_data();
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider::
+  _Alloc_hider((_Alloc_hider *)this,pcVar4,param_2);
+  if (param_1 == (char *)0x0) {
+    fVar3 = 1;
+  }
+  else {
+                    
+    iVar2 = char_traits<char>::length(param_1);
+    fVar3 = iVar2 + (int)param_1;
+  }
+  _M_construct<char_const*>((char *)this,param_1,fVar3);
+  if (lVar1 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
+
+
+
+difference_type std::distance<char_const*>(char *param_1,char *param_2)
+
+{
+  difference_type dVar1;
+  char *local_10;
+  
+  local_10 = param_1;
+  __iterator_category<char_const*>(&local_10);
+  dVar1 = __distance<char_const*>(local_10,param_2,(random_access_iterator_tag)param_2);
+  return dVar1;
+}
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::
+     _M_construct<char_const*>(char *param_1,char *param_2,forward_iterator_tag param_3)
+
+{
+  bool bVar1;
+  difference_type dVar2;
+  undefined4 extraout_var;
+  char *pcVar3;
+  undefined4 in_register_00000014;
+  char *pcVar4;
+  long in_FS_OFFSET;
+  ulong local_28;
+  long local_20;
+  
+  pcVar4 = (char *)CONCAT44(in_register_00000014,param_3);
+  local_20 = *(long *)(in_FS_OFFSET + 0x28);
+  bVar1 = __gnu_cxx::__is_null_pointer<char_const>(param_2);
+  if ((bVar1) && (param_2 != pcVar4)) {
+    bVar1 = true;
+  }
+  else {
+    bVar1 = false;
+  }
+  if (bVar1) {
+    std::__throw_logic_error("basic_string::_M_construct null not valid");
+  }
+  dVar2 = distance<char_const*>(param_2,pcVar4);
+  local_28 = CONCAT44(extraout_var,dVar2);
+  if (0xf < local_28) {
+    std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_create
+              ((ulong *)param_1,(ulong)&local_28);
+    std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_data(param_1);
+    std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_capacity
+              ((ulong)param_1);
+  }
+                    
+  pcVar3 = (char *)std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::
+                   _M_data();
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_S_copy_chars
+            (pcVar3,param_2,pcVar4);
+  std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_set_length
+            ((ulong)param_1);
+  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
+
+
+bool __gnu_cxx::__is_null_pointer<char_const>(char *param_1)
+
+{
+  return param_1 == (char *)0x0;
+}
+
+
+
+
+
+
+iterator_category std::__iterator_category<char_const*>(char **param_1)
+
+{
+  iterator_category in_EAX;
+  
+  return in_EAX;
+}
+
+
+
+
+
+
+difference_type
+std::__distance<char_const*>(char *param_1,char *param_2,random_access_iterator_tag param_3)
+
+{
+  return (int)param_2 - (int)param_1;
+}
+
+
+
+void _fini(void)
+
+{
+  return;
+}
+
+
+
+
+
+void __thiscall std::allocator<char>::~allocator(allocator<char> *this)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall
+std::basic_ostream<char,std::char_traits<char>>::operator<<
+          (basic_ostream<char,std::char_traits<char>> *this,ulong param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __cxa_begin_catch(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+size_t strlen(char *__s)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+basic_ostream * std::endl<char,std::char_traits<char>>(basic_ostream *param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string
+          (basic_string<char,std::char_traits<char>,std::allocator<char>> *this)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_set_length
+               (ulong param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__throw_logic_error(char *param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __libc_start_main(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_local_data
+               (void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_data
+               (char *param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __cxa_atexit(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+basic_ostream * std::operator<<(basic_ostream *param_1,char *param_2)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall
+std::basic_ostream<char,std::char_traits<char>>::operator<<
+          (basic_ostream<char,std::char_traits<char>> *this,
+          _func_basic_ostream_ptr_basic_ostream_ptr *param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall
+std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider::
+_Alloc_hider(_Alloc_hider *this,char *param_1,allocator *param_2)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall std::allocator<char>::~allocator(allocator<char> *this)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_data(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_S_copy_chars
+               (char *param_1,char *param_2,char *param_3)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __stack_chk_fail(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_dispose(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __cxa_rethrow(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall std::ios_base::Init::Init(Init *this)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __cxa_end_catch(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __gxx_personality_v0(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall
+std::basic_ostream<char,std::char_traits<char>>::operator<<
+          (basic_ostream<char,std::char_traits<char>> *this,int param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void _ITM_deregisterTMCloneTable(void)
+
+{
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void _Unwind_Resume(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::allocator<char>::allocator(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_create
+               (ulong *param_1,ulong param_2)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __gmon_start__(void)
+
+{
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void _ITM_registerTMCloneTable(void)
+
+{
+                    
+  halt_baddata();
+}
+
+
+
+
+
+
+void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_capacity
+               (ulong param_1)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __thiscall std::ios_base::Init::~Init(Init *this)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+
+
+
+
+void __cxa_finalize(void)
+
+{
+                    
+                    
+  halt_baddata();
+}
+
+

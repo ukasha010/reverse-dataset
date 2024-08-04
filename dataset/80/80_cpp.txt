@@ -1,0 +1,25 @@
+#include<iostream>
+#include<cmath>
+
+void myfunc(int i)
+{
+    std::cout<<"Value of i : "<<i<<std::endl;
+}
+
+void myfunc(double i)
+{
+    double intpart;
+    double fracpart;
+
+    fracpart = modf(i,&intpart);
+    std::cout<<"Fractional part : "<<fracpart<<std::endl;
+    std::cout<<"Integer part : "<<intpart<<std::endl;
+}
+
+int main()
+{
+    myfunc(3);
+    myfunc(1.234);
+    return 0;
+}
+

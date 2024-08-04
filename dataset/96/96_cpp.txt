@@ -1,0 +1,20 @@
+#include<iostream>
+#include<fstream>       
+using namespace std;
+int main()
+{
+    ofstream out("Data.txt");       //open file for output(writing)
+
+    if(!out)
+    {
+        cout<<"Cannot open file!!"<<endl;
+        return 1;
+    }
+
+    out<<"Prakhar Jadaun"<<endl;
+    out<<"Ramesh Kumar"<<endl;
+    out<<"Suresh Kumar"<<endl;
+
+    out.close();
+    return 0;
+}

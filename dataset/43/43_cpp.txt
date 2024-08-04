@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+int main()
+{
+    std::priority_queue<char> p;
+
+    p.push('X');
+    p.push('A');
+    p.push('S');
+    p.push('O');
+
+    std::cout<<"Size : "<<p.size()<<std::endl;
+
+    std::cout<<"Priority Queue : "<<std::endl;
+    while(!p.empty())
+    {
+        std::cout<<p.top()<<std::endl;
+        p.pop();
+    }
+    return 0;
+
+}

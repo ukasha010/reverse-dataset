@@ -1,0 +1,26 @@
+
+#include<iostream>
+using namespace std;
+
+int execute()
+{
+    cout<<"Under excute function";
+    exit(EXIT_SUCCESS);
+}
+
+static int s = execute();
+
+int main()
+{
+    cout<<"Inside main function"<<endl;
+}
+
+
+
+
+
+
+
+
+
+

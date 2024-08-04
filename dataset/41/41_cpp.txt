@@ -1,0 +1,48 @@
+#include<iostream>
+#include<deque>
+#include<vector>
+int main()
+{
+    std::deque<char> d;
+    std::vector<char> v  = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+    std::vector<char>::iterator p;
+
+    for( p = v.begin();p != v.end();p++)
+    {
+        d.push_back(*p);
+    }
+
+    std::deque<char>::iterator it = d.begin();
+    std::cout<<"Elements in deque : ";
+    while(it!=d.end())
+    {
+        std::cout<<*it<<" ";
+        it++;
+    }
+    std::cout<<std::endl;
+
+    std::cout<<"Size : "<<d.size()<<std::endl;
+
+    std::cout<<"Max size : "<<d.max_size()<<std::endl;
+
+    std::cout<<"Front element : "<<d.front()<<std::endl;
+
+    std::cout<<"Last element : "<<d.back()<<std::endl;
+
+    d.pop_front();
+    std::cout<<"Front element : "<<d.front()<<std::endl;
+
+    d.pop_back();
+    std::cout<<"Last element : "<<d.back()<<std::endl;
+
+    std::deque<char>::reverse_iterator t = d.rbegin();
+    std::cout<<"Elements of the deque : ";
+    while(t!=d.rend())
+    {
+        std::cout<<*t<<" ";
+        t++;
+    }
+    std::cout<<std::endl;
+
+    return 0;
+}

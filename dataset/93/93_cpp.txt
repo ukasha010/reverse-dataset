@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+void myfunc()
+{
+    try 
+    {
+        throw "hello";
+    }
+    catch(const char *s)    //exception caught
+    {
+        cout<<"Caught char *s inside myfunc()"<<endl;
+        cout<<s<<endl;
+        throw;      //rethrown char* out of the function
+    }
+}
+int main()
+{
+    try
+    {
+        myfunc();
+    }
+    catch(const char *s)    //exception caught
+    {
+        cout<<"Caught char *s inside main()"<<endl;
+        cout<<s<<endl;
+    }
+    return 0;
+}

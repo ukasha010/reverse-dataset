@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    char ch;
+    cout<<"Enter a uppercase character : ";
+    cin>>ch;
+
+    cout<<ch<<" converted to lowercase --> "<<(char)(ch+32)<<endl;
+
+    cout<<ch <<" converted to lowercase (using tolower() function) --> "<<(char)tolower(ch)<<endl;
+    return 0;
+}

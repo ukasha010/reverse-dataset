@@ -1,0 +1,13 @@
+#include<iostream>
+#include<math.h>
+int main()
+{
+    int a;
+    std::cout<<"Enter a number : ";
+    std::cin>>a;
+
+    std::cout<<a*a*a<<std::endl;
+
+    std::cout<<pow(a,3)<<std::endl;
+    return 0;
+}

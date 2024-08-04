@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+void myFunc(int i)
+{
+    try
+    {
+        cout<<"Inside myfunc : "<<i<<endl;
+        if(i)
+            throw i;
+    }
+    catch(int e)
+    {
+        cout<<"Exception is handled locally : "<<e<<endl;
+    }
+}
+
+int main()
+{
+    try 
+    {
+        myFunc(76);
+        myFunc(34);
+        myFunc(23);
+
+    }
+    catch(int i)
+    {
+        cout<<"Inside catch block which is in the main() function"<<endl;
+    }
+    return 0;
+}

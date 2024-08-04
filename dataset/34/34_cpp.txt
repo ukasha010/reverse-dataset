@@ -1,0 +1,52 @@
+#include <iostream>
+#include <vector>
+int main()
+{
+    std::vector<char> v(5);
+    std::vector<char> v2;
+    char str[] = "hello world";
+
+    for (int i = 0; i < v.size(); i++)
+    {
+        v[i] = i + 'a';
+    }
+
+    for (int i = 0; str[i]; i++)
+    {
+        v2.push_back(str[i]);
+    }
+
+    std::cout << "Vector v : ";
+    for (int i = 0; i < v.size(); i++)
+    {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
+
+    std::vector<char>::iterator p = v.begin();
+    p = p + 2;
+    v.insert(p, 5, 'X');
+
+    std::cout << "Vector v : ";
+    for (int i = 0; i < v.size(); i++)
+    {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
+
+    p = v.begin();
+    p += 2;
+    v.erase(p, p + 5);
+
+    p = v.begin();
+    p += 2;
+
+    v.insert(p, v2.begin(), v2.end());
+
+    std::cout << "Vector v : ";
+    for (int i = 0; i < v.size(); i++)
+    {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
+}

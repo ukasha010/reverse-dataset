@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+long int Fact(int n)
+{
+    if(n<1)
+    {
+        return 1;
+    }
+    return n*Fact(n-1);
+}
+
+int main()
+{
+    cout<<"Strong numbers : ";
+    for(int i=1;i<1000;i++)
+    {
+        long int temp=i,total=0;
+        while(temp!=0)
+        {
+            total= total+ Fact(temp%10);
+            temp=temp/10;
+        }
+        if(total==i)
+        {
+            cout<<total<<" ";
+        }
+    }
+    return 0;
+}
